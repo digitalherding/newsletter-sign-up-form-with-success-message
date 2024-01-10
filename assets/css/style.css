@@ -12,10 +12,45 @@ body {
   flex-direction: column;
   gap: 2rem;
   min-height: 100vh;
+  padding: 1rem;
+  background-color: hsl(234, 29%, 20%);
+}
+
+h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 3rem;
+}
+
+a {
+  color: hsl(4, 100%, 67%);
 }
 
 main {
-  padding: 2rem;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding-left: 3.5rem;
+}
+
+article,
+aside {
+  width: 50%;
+}
+
+aside img {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+footer {
+  color: #fff;
 }
