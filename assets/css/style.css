@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,17 @@ aside img {
 form {
   display: flex;
   flex-direction: column;
+}
+
+form,
+input,
+button,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  font-weight: 700;
 }
 
 footer {
