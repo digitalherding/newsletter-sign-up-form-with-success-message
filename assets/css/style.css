@@ -29,6 +29,10 @@ p {
   line-height: 1.5rem;
 }
 
+p span {
+  font-weight: 700;
+}
+
 main {
   background-color: #fff;
   border-radius: 2rem;
@@ -110,6 +114,13 @@ label {
   font-weight: 700;
   color: hsl(234, 29%, 20%);
   font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-msg {
+  color: hsl(4, 100%, 67%);
+  display: none;
 }
 
 input,
@@ -122,6 +133,10 @@ button,
 
 input {
   border: 1px solid hsl(231, 7%, 60%);
+}
+
+.text-tomato::placeholder {
+  color: hsl(4, 100%, 67%);
 }
 
 button,
@@ -173,6 +188,7 @@ footer {
   max-width: 480px;
   gap: 2rem;
   padding: 3rem;
+  display: none;
 }
 
 .msg-copy {
