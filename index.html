@@ -95,25 +95,36 @@
             <label for="email">Email address</label>
             <input
               type="email"
-              name=""
+              name="email"
               id="email"
               placeholder="email@company.com"
+              required
             />
           </div>
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
       </article>
       <aside>
-        <img
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(max-width: 1024px)"
+            srcset="assets/images/illustration-sign-up-mobile.svg"
+          />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="Illustration"
+          />
+        </picture>
+        <!-- <img
           src="assets/images/illustration-sign-up-desktop.svg"
           alt="Illustration"
-        />
+        /> -->
       </aside>
     </main>
-
-    <!-- Sign-up form start -->
-
-    <!-- Sign-up form end -->
 
     <!-- Success message start -->
 
@@ -127,7 +138,11 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Aaron Varga</a>.
+      >.
+      <br />
+      Coded by
+      <a href="https://github.com/digitalherding" target="_blank">Aaron Varga</a
+      >.
     </footer>
     <script type="module" src="assets/js/script.js" defer></script>
   </body>
